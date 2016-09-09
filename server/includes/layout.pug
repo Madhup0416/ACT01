@@ -1,0 +1,26 @@
+doctype html
+html(xmlns:ng='http://angularjs.org')
+  head
+    <!-- Bootstrap core CSS -->
+    link(rel='stylesheet', href='/css/bootstrap.css')
+
+    link(rel='stylesheet', href='/css/style.css')
+
+    <!-- Custom styles for this template -->
+    link(rel='stylesheet', href='/css/navbar.css')
+
+    <!-- Project core CSS -->
+    link(rel='stylesheet', href='/css/project.css')
+
+    <!-- Toastr CSS -->
+    link(rel='stylesheet', href='/lib/toastr.css')
+
+    <!-- changing the mobile view port -->
+    meta(name="viewport", content="width=device-width")
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    link(rel='stylesheet', href='/css/ie10-viewport-bug-workaround.css')
+    
+  body(ng-app='app')
+    block main-content
+    include scripts
