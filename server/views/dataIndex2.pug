@@ -1,0 +1,29 @@
+extends ../includes/layout
+
+block main-content
+  div(class='container')
+    div(ng-view)
+      div(class= 'form-group')
+        div(class='col-sm-12')
+          table(class = 'table-bordered table-responsive')
+            thead
+              tr
+                th Col 1
+                th Col 2
+                th Col 3
+                th Col 4
+                        
+            tbody
+              tr(ng-repeat = "hosp in hospitals")
+                td {{ hosp.hospitalname }}
+                td {{ hosp.Category }}
+                td {{ hosp.totalnumofbeds }}
+                td {{ hosp.mobilenumber }}
+                
+                
+  div(class='row' ng-repeat="hosp in hospitals ")
+    div(class='col-md-3') {{ hosp.hospitalname }}
+    div(class='col-md-3') {{ hosp.Category }}
+    div(class='col-md-3') {{ hosp.totalnumofbeds }}
+    div(class='col-md-3') {{ hosp.mobilenumber }}
+                

@@ -1,0 +1,10 @@
+div(class='container')
+  div(class='jumbotron')
+    h4 Test Page
+    a(href='./checkhosp' ) Check Hosp
+    
+    div(class='row' ng-repeat="hosp in hospitals")
+      div(class='col-md-6') {{ hosp.hospitalname }}
+      div(class='col-md-2') {{ hosp.Category }}
+      div(class='col-md-2') {{ hosp.state }}
+      div(class='col-md-2') {{ hosp.district }}
