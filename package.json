@@ -6,16 +6,16 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "~4.8.8",
+	"express": "~4.8.8",
 	"morgan": ">=1.9.1",
 	"compression": "~1.0.11",
 	"body-parser": "~1.8.0",
 	"method-override": ">=2.3.10",
 	"express-session": "~1.7.6",
-    "pug": "~2.0.0-alpha8",
-    "mongoose": "~4.0.8",
-    "passport": "~0.2.1",
-    "stylus": "~0.45.0",
-    "passport-local": "~1.0.0"
+	"pug": "~2.0.0-alpha8",
+	"mongoose": ">=5.7.5",
+	"passport": "~0.2.1",
+	"stylus": "~0.45.0",
+	"passport-local": "~1.0.0"
   }
 }
